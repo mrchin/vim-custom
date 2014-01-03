@@ -27,3 +27,6 @@ au FileType aux map <buffer> <F5> :!bibtex %:r <CR>
 nnoremap <CR> :noh<CR><CR>
 
 " :au BufNewFile *.cpp 0r ~/dotfiles/bundle/vim-custom/plugin/skeleton.cpp
+syntax on
+filetype plugin indent on
+
