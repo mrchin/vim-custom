@@ -31,7 +31,7 @@ function! NewBashFile()
 
 endfunction
 
-autocmd BufNewFile *.sh call NewCppFile() 
+autocmd BufNewFile *.sh call NewBashFile() 
 
 " skeleton templates for cpp
 function! NewCppFile()
