@@ -20,6 +20,19 @@ function! HCheck()
     endif
 endfunction
 
+" skeleton templates for bash
+function! NewBashFile()
+    silent! 0r ~/dotfiles/bundle/vim-custom/templates/skeleton.bash
+
+    " insert filename at FILENAME
+    3s/FILENAME/\=expand("%:t")
+    " insert date at DATE
+    7s/DATE/\=strftime("%a %d %b %Y")/
+
+endfunction
+
+autocmd BufNewFile *.sh call NewCppFile() 
+
 " skeleton templates for cpp
 function! NewCppFile()
     silent! 0r ~/dotfiles/bundle/vim-custom/templates/skeleton.cpp
