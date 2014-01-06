@@ -31,7 +31,7 @@ function! NewPythonFile()
 
 endfunction
 
-autocmd BufNewFile *.sh call NewPythonFile() 
+autocmd BufNewFile *.py call NewPythonFile() 
 
 " skeleton templates for bash
 function! NewBashFile()
