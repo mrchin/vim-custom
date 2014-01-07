@@ -6,7 +6,7 @@ set t_Co=256
 " " otherwise use this one in linux
 " if has("unix")
 " endif
-silent! colorscheme desert
+silent! colorscheme leo
 
 " section: highlight the 80th column
 "
