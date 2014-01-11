@@ -20,9 +20,35 @@ function! HCheck()
     endif
 endfunction
 
+" skeleton templates for python
+function! NewPythonFile()
+    silent! 0r ~/.vim/bundle/vim-custom/templates/skeleton.py
+
+    " insert filename at FILENAME
+    3s/FILENAME/\=expand("%:t")
+    " insert date at DATE
+    7s/DATE/\=strftime("%a %d %b %Y")/
+
+endfunction
+
+autocmd BufNewFile *.py call NewPythonFile() 
+
+" skeleton templates for bash
+function! NewBashFile()
+    silent! 0r ~/.vim/bundle/vim-custom/templates/skeleton.bash
+
+    " insert filename at FILENAME
+    3s/FILENAME/\=expand("%:t")
+    " insert date at DATE
+    7s/DATE/\=strftime("%a %d %b %Y")/
+
+endfunction
+
+autocmd BufNewFile *.sh call NewBashFile() 
+
 " skeleton templates for cpp
 function! NewCppFile()
-    silent! 0r ~/dotfiles/bundle/vim-custom/templates/skeleton.cpp
+    silent! 0r ~/.vim/bundle/vim-custom/templates/skeleton.cpp
 
     " insert filename at FILENAME
     2s/FILENAME/\=expand("%:t")
@@ -38,7 +64,7 @@ autocmd BufNewFile *.cpp call NewCppFile()
 
 " skeleton templates for cpp h file
 function! NewCppHFile()
-    silent! 0r ~/dotfiles/bundle/vim-custom/templates/skeleton.h
+    silent! 0r ~/.vim/bundle/vim-custom/templates/skeleton.h
     " insert filename at FILENAME
     1,2s/FILENAME/\=expand("%:t:r")
 endfunction
