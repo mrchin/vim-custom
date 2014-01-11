@@ -7,4 +7,5 @@ map <leader>e :s/\(\S\)=\(\S\)/\1 = \2/
 map <leader>p :s/\(\S\)+\(\S\)/\1 + \2/
 map <leader>o :s/\(\S\)+=\(\S\)/\1 += \2/
 map <leader>m :s/\(\S\)-\(\S\)/\1 - \2/
+map <leader>r :s/\(\S\)%\(\S\)/\1 % \2/
 map <leader>8 :s/\(\S\)\*\(\S\)/\1 * \2/
