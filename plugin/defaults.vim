@@ -3,7 +3,7 @@ set tabstop=4
 set shiftwidth=4
 set softtabstop=4
 set expandtab
-set textwidth=80
+set textwidth=79
 
 " when comparing files with vimdiff ignore whitespace
 set diffopt+=iwhite
