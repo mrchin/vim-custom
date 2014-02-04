@@ -5,7 +5,8 @@
  *
  * Date:DATE 
  *
- * Author: Kevin Manalo
+ * Author: Michael Chin
+ * Email: michaelrchin@gmail.com
  */
 #include <iostream>
 using namespace std;

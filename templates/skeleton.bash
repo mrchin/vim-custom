@@ -6,6 +6,6 @@
 #*
 #* Date:DATE 
 #*
-#* Author: Kevin Manalo
-#* Email:  kmanalo@gmail.com
+#* Author: Michael Chin
+#* Email:  michaelrchin@gmail.com
 
